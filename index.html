@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive Portfolio Website</title>
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="">
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onLoad="document.getElementById('icons').click">
+    <section>
+        <div class="circle"></div>
+        <!-- Start Header -->
+        <header>
+            <a href="#" class="logo">
+                <img src="images/logo.png">
+            </a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Content -->
+        <div class="content">
+            <div class="textBox">
+                <h2>It,s not just Coffee<br> It,s 
+                    <span class="hid_color">Starbucks</span></h2>
+                <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur, qui placeat beatae sint
+                    blanditiis ex reiciendis enim excepturi 
+                    dolor cumque magni deserunt id ratione 
+                    <span id="dots"> . . . </span>
+                    <span id="more"> consequuntur quos dicta nesciunt explicabo non?</span>
+                </p>
+                <a href="#" id="read" onclick="read()">Read More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class="strabucks">
+            </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Start Thumb -->
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143');"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495');"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1');"></li>
+        </ul>
+        <!-- Start Soical -->
+        <ul class="sci">
+            
+            <a href="https://www.facebook.com/" id="icons" target="_blank">
+                <li><i class="fab fa-facebook"></i></li>
+            </a>
+            <a href="https://www.google.com/" id="icons" target="_blank">
+                <li><i class="fab fa-google"></i></li>
+            </a>
+            <a href="https://www.instagram.com/" id="icons" target="_blank">
+                <li><i class="fab fa-instagram"></i></li> 
+            </a>
+        </ul>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+
+
+
+
+    <!-- Start Content -->
+    <!-- <div class="content">
+        <div class="container">
+            <div class="textBox">
+                <h2>It,s not just Coffee<br> It,s <span class="hid_color">Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui placeat beatae sint
+                    blanditiis ex
+                    reiciendis enim excepturi dolor cumque magni deserunt id ratione consequuntur quos dicta nesciunt
+                    explicabo non?</p>
+                <a href="#" class="but_bk_color">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img class="strabucks" src="images/img2.png">
+            </div>
+        </div>
+    </div> -->
+    <!-- End Content -->
+<!-- 
+    <!-- Start LooK -->
+    <!-- <ul class="look">
+        <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143');"></li>
+        <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495');"></li>
+        <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1');"></li>
+    </ul>
+ -->
+    <!-- Start Soical -->
+    <!-- <ul class="soical">
+        <li><i class="fab fa-facebook"
+                onclick="facebook('/www.google.com')"></i></li>
+        <li><i class="fab fa-whatsapp"></i></li>
+        <li><i class="fab fa-instagram"></i></li> 
+    </ul> -->
+
+</html>
